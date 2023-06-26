@@ -70,7 +70,7 @@ color: white;
 }
 
 .estudante-imagem5{
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -86,7 +86,7 @@ color: white;
 
 .estudante-todos{
     display:grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 
