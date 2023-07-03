@@ -134,7 +134,7 @@ color: white;
     display: none;
     position: absolute;
     top: 100%;
-    color: black;
+      
 }
 
 .container__botao:checked~.lista-menu {
@@ -153,10 +153,7 @@ color: white;
 }
 
 .lista-menu__link {
-        -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-transform: uppercase;
+    color: black;
 }
 
 .container__botao {
