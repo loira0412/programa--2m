@@ -154,6 +154,7 @@ color: white;
 
 .lista-menu__link {
     color: black;
+    text-decoration: none;
 }
 
 .container__botao {
