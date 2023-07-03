@@ -14,6 +14,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 24px 0;
+    position: relative;
 }
 
 .cabecalho-imagem {
@@ -114,13 +115,6 @@ color: white;
     display: inline-block;
 }
 
-.cabeçalho {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
 
 .container {
     display: flex;
