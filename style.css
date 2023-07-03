@@ -116,6 +116,7 @@ color: white;
     height: 24px;
     display: inline-block;
     background-image: url(./Menu.svg);
+    background-repeat: no-repeat;
 }
 
 
