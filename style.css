@@ -118,7 +118,7 @@ color: white;
 }
 
 .cabeçalho {
-    background-color: var(--branco);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
