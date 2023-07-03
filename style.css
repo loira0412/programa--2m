@@ -134,6 +134,7 @@ color: white;
     display: none;
     position: absolute;
     top: 100%;
+    color: black;
 }
 
 .container__botao:checked~.lista-menu {
