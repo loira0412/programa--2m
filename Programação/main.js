@@ -2,7 +2,7 @@ function TocaSom (audio) {
     document.querySelector(audio).play();
 }
 
-const ListaDeSom = document.querySelectorAll('.tecla');
+const ListaDeSom= document.querySelectorAll('.tecla');
 
 //let Contador = 0;
 
