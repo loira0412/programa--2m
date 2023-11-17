@@ -1,109 +1,115 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
 
 :root {
-    --cinza: #aaa;
-    --vermelha: #e93d50;
-    --vermelha-escura: #af303f;
-    --branca: #fff;
-    --luz: rgb(229, 255, 0);
-  }
-  
-  body {
-    align-items: center;
-    background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-  }
-  
-  h1 {
-    color: var(--branca);
-    margin-bottom: 20px;
-    font-size: 2rem;
-  }
-  
-  .teclado {
-    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
-    box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
-    border-radius: 30px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-  }
-  
-  .tecla {
-    background-color: var(--branca);
-    border-radius: 30px;
-    box-shadow: 3px 3px 0 var(--cinza);
-    color: var(--vermelha);
-    cursor: pointer;
-    height: 120px;
-    font-size: 1.75em;
-    font-weight: bold;
-    line-height: 120px;
-    text-align: center;
-    width: 120px;
-  }
-  
-  .tecla.ativa,
-  .tecla:active {
-    background-color: var(--vermelha);
-    border: 4px solid  var(--vermelha);
-    box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
-    color: var(--branca);
-    outline: none;
-  }
-  
-  .tecla.focus,
-  .tecla:focus {
-    outline: none;
-    box-shadow: 1px 1px 10px var(--luz);
-  }
-  
-  .tecla.active:focus,
-  .tecla:active:focus {
-    box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
-  }
-  
-  
-  :root {
-      --cor-de-fundo: #EBECEE;
-      --branco: #FFFFFF;
-      --laranja: #EB9B00;
-      --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-      --fonte-principal: "Poppins";
-      --azul: #002F52;
-      --fonte-secundario: "Josefin Sans";
-      --preto: #000000;
-      --cinza: #474646;
-      --cinza-claro: #858585;
-  }
-  
-  body {
-      background-color: var(--cor-de-fundo);
-      font-family: var(--fonte-principal);
-      font-size: 16px;
-      font-weight: 400;
-  }
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+  --laranja: #EB9B00;
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: "Poppins";
+  --azul: #002F52;
+  --fonte-secundario: "Josefin Sans";
+  --preto: #000000;
+  --cinza: #474646;
+  --cinza-claro: #858585;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .calculator {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    margin: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  margin: 5px;
+
+
+}
+
+.fff {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
