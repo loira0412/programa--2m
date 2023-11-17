@@ -67,9 +67,6 @@
     box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
   }
   
-  @import url("styles/header.css");
-  @import url("styles/banner.css");
-  @import url("styles/rodapé.css");
   
   :root {
       --cor-de-fundo: #EBECEE;
