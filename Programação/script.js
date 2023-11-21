@@ -13,7 +13,7 @@ function calculateResult() {
 
 
 function calcularPorcentagem() {
-    //Obtenha o valor atuaçl da calculadora
+    //Obtenha o valor atual da calculadora
 
     var valorAtual= parseFloat(document.getElementById('display').value);
 
