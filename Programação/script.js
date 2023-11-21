@@ -19,7 +19,7 @@ function calcularPorcentagem() {
 
     // Calcule a porcentagem (por exemplo,20%)
 
-    var resultado = valorAtual * 2;
+    var resultado = valorAtual * 100;
     // Atualize o valor exibido na calculadora
 
     document.getElementById('display').value = resultado;
