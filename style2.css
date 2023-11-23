@@ -62,9 +62,9 @@
 }
 
 .cabecalho-lista-item {
-    display: inline;
-    margin: 0 16px;
-    font-size: 24px;
+    display: flex;
+    margin: 0 7px;
+    font-size: 14px;
 }
 .cabecalho-lista a {
 text-decoration: none;
